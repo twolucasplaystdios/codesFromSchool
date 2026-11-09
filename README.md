@@ -9,7 +9,7 @@
 
 ```bash
 # 克隆專案
-git clone https://github.com
+git clone https://github.com/twolucasplaystdios/codesFromSchool.git
 cd my-cli-tool
 
 # 建立編譯資料夾並編譯
@@ -17,4 +17,4 @@ mkdir build && cd build
 cmake ..
 cmake --build .
 ```
-編譯完成後，你會在 `build` 資料夾內看到 `my_tool` 可執行檔。
+編譯完成後，你會在 `build` 資料夾內看到 `runmyhw` 可執行檔。
