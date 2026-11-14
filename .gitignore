@@ -1,13 +1,28 @@
-# 排除編譯產出
+# git
+.git
+
+
+# IDE
+.vscode/
+.vs/
+*.user
+*.suo
+
+# Locals
+.env
+.env.local
+.env.*.local
+
+# Python
+.venv
+.venv/
+__pycache__/
+
+# C++
+
 /build/
 /bin/
 *.exe
 *.out
 *.o
 *.obj
-
-# 排除 IDE 產生的暫存資料夾
-.vscode/
-.vs/
-*.user
-*.suo

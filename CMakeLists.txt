@@ -1,14 +1,13 @@
-cmake_minimum_required(VERSION 3.10)
-project(Homework)
+cmake_minimum_required(VERSION 3.15)
+project(HomeworkTool VERSION 1.0.0 LANGUAGES CXX)
+
+find_package(Python3 REQUIRED COMPONENTS Development)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories(include)
 
+add_executable(run_hw "src/main.cpp")
 
-add_library(logger "src/logger.cpp")
-target_include_directories(logger PUBLIC "src/headers")
-
-
-add_executable(menu "src/main.cpp")
+target_include_directories(MyApp PRIVATE ${Python3_INCLUDE_DIRS})
+target_link_libraries(MyApp PRIVATE Python3::Python)
