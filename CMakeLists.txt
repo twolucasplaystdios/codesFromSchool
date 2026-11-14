@@ -6,6 +6,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(include)
 
-file(GLOB_RECURSIVE SOURCES "src/*.cpp")
 
-add_executable(runmyhw ${SOURCES})
+add_library(logger "src/logger.cpp")
+target_include_directories(logger PUBLIC "src/headers")
+
+
+add_executable(menu "src/main.cpp")
